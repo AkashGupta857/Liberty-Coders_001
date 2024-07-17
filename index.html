@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - #CodePenChallenge: Notification Center</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -9,10 +19,11 @@
 				<div class="flex justify-between">
 					<div class="flex">
 						<div class="logo flex flex-shrink-0 items-center text-white hover:text-[#E730CA] transition-colors">
-							<svg class="hidden md:block logo-svg transform hover: transition-transform duration-700" style="transform-style: preserve-3d" width="52" height="44" viewBox="0 0 52 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<!-- <svg class="hidden md:block logo-svg transform hover: transition-transform duration-700" style="transform-style: preserve-3d" width="52" height="44" viewBox="0 0 52 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M22.8601 0.415039L51.0641 28.5049V43.5849H37.9022V33.9259L17.4173 13.5237H13.1619V43.5849H0V0.415039H22.8601ZM37.9022 15.3963V0.415039H51.0641V15.3963H37.9022Z" fill="currentColor" />
-							</svg>
-
+							</svg> -->
+							<!-- <img src="./uilibrary.jpg" alt=""> -->
+							 <h1>LibertyCoders</h1>
 							<svg class="md:hidden" width="37" height="31" viewBox="0 0 37 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M16.5639 0L37 20.1712V31H27.4632V24.064L12.6202 9.41322H9.53683V31H0V0H16.5639ZM27.4632 10.758V0H37V10.758H27.4632Z" fill="currentColor" />
 							</svg>
@@ -21,14 +32,14 @@
 
 					<div class="hidden min-[845px]:flex sm:space-x-8">
 						<a href="#" class="relative text-[#E730CA] hover:text-[#E730CA] inline-flex items-center font-bold before:content-[''] before:absolute before:bottom-2.5 before:left-1/2 before:transform before:-translate-x-1/2 before:h-[1.5px] before:w-full before:bg-white" aria-current="page">Home</a>
-						<a href="#" class="relative text-white hover:text-[#E730CA] inline-flex items-center font-bold before:content-[''] before:absolute before:bottom-2.5 before:left-1/2 before:transform before:-translate-x-1/2 before:h-[1.5px] before:w-0 before:bg-white before:transition-all before:hover:w-full before:duration-500">Marketplace</a>
-						<a href="#" class="relative text-white hover:text-[#E730CA] inline-flex items-center font-bold before:content-[''] before:absolute before:bottom-2.5 before:left-1/2 before:transform before:-translate-x-1/2 before:h-[1.5px] before:w-0 before:bg-white before:transition-all before:hover:w-full before:duration-500">Collections</a>
-						<a href="#" class="relative text-white hover:text-[#E730CA] inline-flex items-center font-bold before:content-[''] before:absolute before:bottom-2.5 before:left-1/2 before:transform before:-translate-x-1/2 before:h-[1.5px] before:w-0 before:bg-white before:transition-all before:hover:w-full before:duration-500">Community</a>
+						<a href="#" class="relative text-white hover:text-[#E730CA] inline-flex items-center font-bold before:content-[''] before:absolute before:bottom-2.5 before:left-1/2 before:transform before:-translate-x-1/2 before:h-[1.5px] before:w-0 before:bg-white before:transition-all before:hover:w-full before:duration-500">Examples</a>
+						<a href="#" class="relative text-white hover:text-[#E730CA] inline-flex items-center font-bold before:content-[''] before:absolute before:bottom-2.5 before:left-1/2 before:transform before:-translate-x-1/2 before:h-[1.5px] before:w-0 before:bg-white before:transition-all before:hover:w-full before:duration-500">Icons</a>
+						<a href="#" class="relative text-white hover:text-[#E730CA] inline-flex items-center font-bold before:content-[''] before:absolute before:bottom-2.5 before:left-1/2 before:transform before:-translate-x-1/2 before:h-[1.5px] before:w-0 before:bg-white before:transition-all before:hover:w-full before:duration-500">Themes</a>
 					</div>
 
 					<div class="flex items-center space-x-7">
 						<a class="relative group hidden min-[845px]:flex bg-transparent min-w-44 w-44 h-12 rounded-lg overflow-hidden border border-[#E730CA] font-semibold text-[#E730CA] sm:hover:text-white sm:hover:border-[#561950] transition-all duration-700" style="will-change: transform" id="cta">
-							<span x-on:mouseover="openError = true" class="flex justify-center items-center h-full w-full sm:transform sm:group-hover:-translate-x-3.5 transition-transform cursor-pointer duration-700">Connect Wallet</span>
+							<span x-on:mouseover="openError = true" class="flex justify-center items-center h-full w-full sm:transform sm:group-hover:-translate-x-3.5 transition-transform cursor-pointer duration-700">How to Use</span>
 							<span class="absolute top-0 -right-8 sm:group-hover:right-0 h-full flex justify-center items-center px-1.5 bg-[#E730CA] transition-all cursor-pointer duration-700">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#131313" class="w-[18px] h-4">
 									<path d="M2.273 5.625A4.483 4.483 0 0 1 5.25 4.5h13.5c1.141 0 2.183.425 2.977 1.125A3 3 0 0 0 18.75 3H5.25a3 3 0 0 0-2.977 2.625ZM2.273 8.625A4.483 4.483 0 0 1 5.25 7.5h13.5c1.141 0 2.183.425 2.977 1.125A3 3 0 0 0 18.75 6H5.25a3 3 0 0 0-2.977 2.625ZM5.25 9a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h13.5a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3H15a.75.75 0 0 0-.75.75 2.25 2.25 0 0 1-4.5 0A.75.75 0 0 0 9 9H5.25Z" />
@@ -183,11 +194,11 @@
 									</a>
 								</div>
 							</div>
-							<h1 class="mt-10 max-w-lg text-4xl sm:text-7xl lg:text-6xl font-semibold text-white xl:text-7xl tracking-tight">Discover your own NFT <span class="text-[#FF33DE]">here!</span></h1>
-							<p class="mt-6 xl:text-lg font-medium leading-8 text-white max-w-[553px]">Buy and Sell your favorite NFT here from the top artist in the world, more than 10.000 collection are available just for you</p>
+							<h1 class="mt-10 max-w-lg text-4xl sm:text-7xl lg:text-6xl font-semibold text-white xl:text-7xl tracking-tight">Build Your website<span class="text-[#FF33DE]">here!</span></h1>
+							<p class="mt-6 xl:text-lg font-medium leading-8 text-white max-w-[553px]">LibertyCoders is the place where you can find any kind of code template you want Just one click and you are ready to go. Don't wait started today.</p>
 							<div class="mt-10 flex items-center gap-x-6">
-								<a href="#" x-on:mouseover="openError = true" class="rounded-xl bg-[#E730CA] w-32 xl:w-40 py-2.5 font-semibold text-sm xl:text-base text-white text-center border border-transparent hover:border-[#E730CA] hover:bg-transparent focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-transparent transition-colors">Find NFT</a>
-								<a href="#" x-on:mouseover="openError = true" class="border border-[#E730CA] hover:border-[#E730CA]/30 bg-transparent hover:bg-[#E730CA]/30 rounded-xl w-32 xl:w-40 py-2.5 font-semibold leading-6 text-sm xl:text-base text-[#E730CA] hover:text-white text-center transition-colors">Create NFT</a>
+								<a href="#" x-on:mouseover="openError = true" class="rounded-xl bg-[#E730CA] w-32 xl:w-40 py-2.5 font-semibold text-sm xl:text-base text-white text-center border border-transparent hover:border-[#E730CA] hover:bg-transparent focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-transparent transition-colors">Get Started</a>
+								<a href="#" x-on:mouseover="openError = true" class="border border-[#E730CA] hover:border-[#E730CA]/30 bg-transparent hover:bg-[#E730CA]/30 rounded-xl w-32 xl:w-40 py-2.5 font-semibold leading-6 text-sm xl:text-base text-[#E730CA] hover:text-white text-center transition-colors">Sign Up</a>
 							</div>
 						</div>
 						<div class="relative flex justify-center items-center mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
@@ -200,23 +211,17 @@
 								<div class="stat" style="--i:3">
 									<div class="flex items-end mr-[55px] 2xl:mr-0 w-[85px] sm:w-[175px] h-[126px] sm:h-[225px] 2xl:w-[200px] 2xl:h-[250px] rounded-md sm:rounded-2xl 2xl:rounded-3xl bg-center bg-cover bg-no-repeat scale-[0.6] sm:scale-100 overflow-hidden transition-all" style="background-image: url('https://coinstats.app/blog/wp-content/uploads/2023/06/The-Rise-of-NFTs-How-Will-AI-Impact-the-NFT-Art-Ecosystem-copy-1-1200x900.webp'); animation: float 6s ease-in-out infinite;">
 										<div class="hidden sm:block flex-1 bg-white h-[95px] px-4 glass">
-											<h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[145px] 2xl:max-w-none">Balistic Wave Collection #1</h4>
+											<h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[145px] 2xl:max-w-none">Theme1</h4>
 											<div class="flex items-center justify-between font-bold text-[0.625rem]">
 												<div class="flex flex-col">
-													<span class="text-[#646464]">Curent Bid</span>
+													<span class="text-[#646464]"></span>
 													<span class="flex items-center space-x-1 text-[#161616]">
-														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C3.5815 16 0 12.4185 0 8C0 3.5815 3.5815 0 8 0C12.4185 0 16 3.5815 16 8C16 12.4185 12.4185 16 8 16ZM11.997 8.1095L8.249 2L4.5 8.11L8.249 10.2865L11.997 8.1095ZM12 8.808L8.249 10.9835L4.5 8.8085L8.249 13.9975L12 8.808Z" fill="#F1F1F1" />
-															<path d="M8.24902 2V6.435L11.9975 8.11L8.24902 2ZM8.24902 10.984V13.9975L12 8.808L8.24902 10.984Z" fill="blue" fill-opacity="0.298" />
-															<path d="M8.24902 10.2865L11.9975 8.11003L8.24902 6.43604V10.2865Z" fill="blue" fill-opacity="0.801" />
-															<path d="M4.5 8.11003L8.249 10.2865V6.43604L4.5 8.11003Z" fill="blue" fill-opacity="0.298" />
-														</svg>
-														<span>0.2 ETH</span>
+														<span>1</span>
 													</span>
 												</div>
 												<div>
 													<button type="button" class="text-[#161616] hover:text-[#E730CA] border rounded-full border-[#161616] hover:border-[#E730CA] w-12 h-6 transition-colors">
-														Bid
+														use
 													</button>
 												</div>
 											</div>
@@ -226,23 +231,17 @@
 								<div class="stat" style="--i:7">
 									<div class="flex items-end mr-[55px] 2xl:mr-0 w-[85px] sm:w-[175px] h-[126px] sm:h-[225px] 2xl:w-[200px] 2xl:h-[250px] rounded-md sm:rounded-2xl 2xl:rounded-3xl bg-center bg-cover bg-no-repeat scale-[0.6] sm:scale-100 overflow-hidden transition-all" style="background-image: url('https://uk.sganalytics.com/assets/uploads/fcimages/images/NFT%20digital%20art.jpg'); animation: float 8s ease-in-out infinite;">
 										<div class="hidden sm:block flex-1 bg-white h-[95px] px-4 glass">
-											<h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[145px] 2xl:max-w-none">Balistic Wave Collection #1</h4>
+											<h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[145px] 2xl:max-w-none">Theme2</h4>
 											<div class="flex items-center justify-between font-bold text-[0.625rem]">
 												<div class="flex flex-col">
-													<span class="text-[#646464]">Curent Bid</span>
+													<span class="text-[#646464]"></span>
 													<span class="flex items-center space-x-1 text-[#161616]">
-														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C3.5815 16 0 12.4185 0 8C0 3.5815 3.5815 0 8 0C12.4185 0 16 3.5815 16 8C16 12.4185 12.4185 16 8 16ZM11.997 8.1095L8.249 2L4.5 8.11L8.249 10.2865L11.997 8.1095ZM12 8.808L8.249 10.9835L4.5 8.8085L8.249 13.9975L12 8.808Z" fill="#F1F1F1" />
-															<path d="M8.24902 2V6.435L11.9975 8.11L8.24902 2ZM8.24902 10.984V13.9975L12 8.808L8.24902 10.984Z" fill="blue" fill-opacity="0.298" />
-															<path d="M8.24902 10.2865L11.9975 8.11003L8.24902 6.43604V10.2865Z" fill="blue" fill-opacity="0.801" />
-															<path d="M4.5 8.11003L8.249 10.2865V6.43604L4.5 8.11003Z" fill="blue" fill-opacity="0.298" />
-														</svg>
-														<span>0.2 ETH</span>
+														<span>2</span>
 													</span>
 												</div>
 												<div>
 													<button type="button" class="text-[#161616] hover:text-[#E730CA] border rounded-full border-[#161616] hover:border-[#E730CA] w-12 h-6 transition-colors">
-														Bid
+														use
 													</button>
 												</div>
 											</div>
@@ -252,23 +251,17 @@
 								<div class="stat" style="--i:11">
 									<div class="flex items-end mr-[55px] 2xl:mr-0 w-[85px] sm:w-[175px] h-[126px] sm:h-[225px] 2xl:w-[200px] 2xl:h-[250px] rounded-md sm:rounded-2xl 2xl:rounded-3xl bg-center bg-cover bg-no-repeat overflow-hidden transition-all" style="background-image: url('https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/05/merlin_184196631_939fb22d-b909-4205-99d9-b464fb961d32-superJumbo.jpeg?auto=format&q=60&fit=max&w=930'); animation: floatdown 6.5s ease-in-out infinite;">
 										<div class="hidden sm:block flex-1 bg-white h-[95px] px-4 glass">
-											<h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[145px] 2xl:max-w-none">Balistic Wave Collection #1</h4>
+											<h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[145px] 2xl:max-w-none">Theme3</h4>
 											<div class="flex items-center justify-between font-bold text-[0.625rem]">
 												<div class="flex flex-col">
-													<span class="text-[#646464]">Curent Bid</span>
+													<span class="text-[#646464]"></span>
 													<span class="flex items-center space-x-1 text-[#161616]">
-														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C3.5815 16 0 12.4185 0 8C0 3.5815 3.5815 0 8 0C12.4185 0 16 3.5815 16 8C16 12.4185 12.4185 16 8 16ZM11.997 8.1095L8.249 2L4.5 8.11L8.249 10.2865L11.997 8.1095ZM12 8.808L8.249 10.9835L4.5 8.8085L8.249 13.9975L12 8.808Z" fill="#F1F1F1" />
-															<path d="M8.24902 2V6.435L11.9975 8.11L8.24902 2ZM8.24902 10.984V13.9975L12 8.808L8.24902 10.984Z" fill="blue" fill-opacity="0.298" />
-															<path d="M8.24902 10.2865L11.9975 8.11003L8.24902 6.43604V10.2865Z" fill="blue" fill-opacity="0.801" />
-															<path d="M4.5 8.11003L8.249 10.2865V6.43604L4.5 8.11003Z" fill="blue" fill-opacity="0.298" />
-														</svg>
-														<span>0.2 ETH</span>
+														<span>3</span>
 													</span>
 												</div>
 												<div>
 													<button type="button" class="text-[#161616] hover:text-[#E730CA] border rounded-full border-[#161616] hover:border-[#E730CA] w-12 h-6 transition-colors">
-														Bid
+														use
 													</button>
 												</div>
 											</div>
@@ -311,7 +304,7 @@
             return Array.from(parent.children).indexOf(el) + 1
         }
     }" x-id="['tab']" class="px-6 lg:px-8">
-					<h2 class="my-10 text-2xl sm:text-[2.5rem] font-semibold tracking-tight text-white">Hot Drops <span class="text-[#FF33DE]">For You! 🔥</span></h2>
+					<h2 class="my-10 text-2xl sm:text-[2.5rem] font-semibold tracking-tight text-white">Ui Components<span class="text-[#FF33DE]">For You! 🔥</span></h2>
 					<!-- Tab List -->
 					<ul x-ref="tablist" @keydown.right.prevent.stop="$focus.wrap().next()" @keydown.home.prevent.stop="$focus.first()" @keydown.page-up.prevent.stop="$focus.first()" @keydown.left.prevent.stop="$focus.wrap().prev()" @keydown.end.prevent.stop="$focus.last()" @keydown.page-down.prevent.stop="$focus.last()" role="tablist" class="mb-6 gap-y-2 gap-x-8 flex flex-wrap max-w-screen-xl mx-auto">
 						<!-- Tab -->
@@ -320,23 +313,17 @@
 						</li>
 
 						<li>
-							<button :id="$id('tab', whichChild($el.parentElement, $refs.tablist))" @click="select($el.id)" @mousedown.prevent @focus="select($el.id)" type="button" :tabindex="isSelected($el.id) ? 0 : -1" :aria-selected="isSelected($el.id)" :class="isSelected($el.id) ? 'bg-[#E730CA] text-white' : 'bg-transparent text-[#E730CA]'" class="rounded-xl px-4 py-2 font-semibold text-sm xl:text-base text-center hover:text-white border border-[#E730CA] hover:bg-[#E730CA] focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-transparent transition-colors" role="tab">Art</button>
+							<button :id="$id('tab', whichChild($el.parentElement, $refs.tablist))" @click="select($el.id)" @mousedown.prevent @focus="select($el.id)" type="button" :tabindex="isSelected($el.id) ? 0 : -1" :aria-selected="isSelected($el.id)" :class="isSelected($el.id) ? 'bg-[#E730CA] text-white' : 'bg-transparent text-[#E730CA]'" class="rounded-xl px-4 py-2 font-semibold text-sm xl:text-base text-center hover:text-white border border-[#E730CA] hover:bg-[#E730CA] focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-transparent transition-colors" role="tab">Trending</button>
+						</li>
+
+
+
+						<li>
+							<button :id="$id('tab', whichChild($el.parentElement, $refs.tablist))" @click="select($el.id)" @mousedown.prevent @focus="select($el.id)" type="button" :tabindex="isSelected($el.id) ? 0 : -1" :aria-selected="isSelected($el.id)" :class="isSelected($el.id) ? 'bg-[#E730CA] text-white' : 'bg-transparent text-[#E730CA]'" class="rounded-xl px-4 py-2 font-semibold text-sm xl:text-base text-center hover:text-white border border-[#E730CA] hover:bg-[#E730CA] focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-transparent transition-colors" role="tab">Light Ui</button>
 						</li>
 
 						<li>
-							<button :id="$id('tab', whichChild($el.parentElement, $refs.tablist))" @click="select($el.id)" @mousedown.prevent @focus="select($el.id)" type="button" :tabindex="isSelected($el.id) ? 0 : -1" :aria-selected="isSelected($el.id)" :class="isSelected($el.id) ? 'bg-[#E730CA] text-white' : 'bg-transparent text-[#E730CA]'" class="rounded-xl px-4 py-2 font-semibold text-sm xl:text-base text-center hover:text-white border border-[#E730CA] hover:bg-[#E730CA] focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-transparent transition-colors" role="tab">Music</button>
-						</li>
-
-						<li>
-							<button :id="$id('tab', whichChild($el.parentElement, $refs.tablist))" @click="select($el.id)" @mousedown.prevent @focus="select($el.id)" type="button" :tabindex="isSelected($el.id) ? 0 : -1" :aria-selected="isSelected($el.id)" :class="isSelected($el.id) ? 'bg-[#E730CA] text-white' : 'bg-transparent text-[#E730CA]'" class="rounded-xl px-4 py-2 font-semibold text-sm xl:text-base text-center hover:text-white border border-[#E730CA] hover:bg-[#E730CA] focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-transparent transition-colors" role="tab">Science</button>
-						</li>
-
-						<li>
-							<button :id="$id('tab', whichChild($el.parentElement, $refs.tablist))" @click="select($el.id)" @mousedown.prevent @focus="select($el.id)" type="button" :tabindex="isSelected($el.id) ? 0 : -1" :aria-selected="isSelected($el.id)" :class="isSelected($el.id) ? 'bg-[#E730CA] text-white' : 'bg-transparent text-[#E730CA]'" class="rounded-xl px-4 py-2 font-semibold text-sm xl:text-base text-center hover:text-white border border-[#E730CA] hover:bg-[#E730CA] focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-transparent transition-colors" role="tab">Sports</button>
-						</li>
-
-						<li>
-							<button :id="$id('tab', whichChild($el.parentElement, $refs.tablist))" @click="select($el.id)" @mousedown.prevent @focus="select($el.id)" type="button" :tabindex="isSelected($el.id) ? 0 : -1" :aria-selected="isSelected($el.id)" :class="isSelected($el.id) ? 'bg-[#E730CA] text-white' : 'bg-transparent text-[#E730CA]'" class="rounded-xl px-4 py-2 font-semibold text-sm xl:text-base text-center hover:text-white border border-[#E730CA] hover:bg-[#E730CA] focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-transparent transition-colors" role="tab">Photography</button>
+							<button :id="$id('tab', whichChild($el.parentElement, $refs.tablist))" @click="select($el.id)" @mousedown.prevent @focus="select($el.id)" type="button" :tabindex="isSelected($el.id) ? 0 : -1" :aria-selected="isSelected($el.id)" :class="isSelected($el.id) ? 'bg-[#E730CA] text-white' : 'bg-transparent text-[#E730CA]'" class="rounded-xl px-4 py-2 font-semibold text-sm xl:text-base text-center hover:text-white border border-[#E730CA] hover:bg-[#E730CA] focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-transparent transition-colors" role="tab">Landing Ui</button>
 						</li>
 					</ul>
 
@@ -346,55 +333,35 @@
 						<section x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))" :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel">
 							<ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 								<template x-for="_ in Array.from({ length: 8 })">
-									<li class="col-span-1 flex items-end w-full h-[315px] rounded-2xl 2xl:rounded-3xl bg-center bg-cover bg-no-repeat hover:scale-95 overflow-hidden transition-transform duration-300" style="background-image: url('https://cimg.co/news/100430/248406/polina-kondrashova-fhrwah2hmnm-unsplash.jpg');">
-										<div class="block flex-1 bg-white h-[95px] px-4 glass">
-											<h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[90%] 2xl:max-w-none">Balistic Wave Collection #1</h4>
-											<div class="flex items-center justify-between font-bold text-[0.625rem]">
-												<div class="flex flex-col">
-													<span class="text-[#646464]">Curent Bid</span>
-													<span class="flex items-center space-x-1 text-[#161616]">
-														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C3.5815 16 0 12.4185 0 8C0 3.5815 3.5815 0 8 0C12.4185 0 16 3.5815 16 8C16 12.4185 12.4185 16 8 16ZM11.997 8.1095L8.249 2L4.5 8.11L8.249 10.2865L11.997 8.1095ZM12 8.808L8.249 10.9835L4.5 8.8085L8.249 13.9975L12 8.808Z" fill="#F1F1F1" />
-															<path d="M8.24902 2V6.435L11.9975 8.11L8.24902 2ZM8.24902 10.984V13.9975L12 8.808L8.24902 10.984Z" fill="blue" fill-opacity="0.298" />
-															<path d="M8.24902 10.2865L11.9975 8.11003L8.24902 6.43604V10.2865Z" fill="blue" fill-opacity="0.801" />
-															<path d="M4.5 8.11003L8.249 10.2865V6.43604L4.5 8.11003Z" fill="blue" fill-opacity="0.298" />
-														</svg>
-														<span>0.2 ETH</span>
-													</span>
-												</div>
-												<div>
-													<button type="button" class="text-[#161616] hover:text-[#E730CA] border rounded-full border-[#161616] hover:border-[#E730CA] w-12 h-6 transition-colors">
-														Bid
-													</button>
-												</div>
+									<li class="col-span-1 flex items-end w-full h-[315px] rounded-2xl 2xl:rounded-3xl bg-center bg-cover bg-no-repeat hover:scale-95 overflow-hidden transition-transform duration-300" style="">
+										<div class="uniquecard">
+											<div>
+												<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false" class="chakra-icon css-1snx50u" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"></path></svg>
 											</div>
+											<h1>Accessible Chakra Ui</h1>
+											<h2>Please use this Componet for your webiste and alos check it accessibleit in your laptop being this is a very unique caard</h2>
+										</div>
 									</li>
 								</template>
 							</ul>
 						</section>
 
-						<section x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))" :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel">
+						<!-- <section x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))" :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel">
 							<ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 								<template x-for="_ in Array.from({ length: 4 })">
 									<li class="col-span-1 flex items-end w-full h-[315px] rounded-2xl 2xl:rounded-3xl bg-center bg-cover bg-no-repeat hover:scale-95 overflow-hidden transition-transform duration-300" style="background-image: url('https://510411.fs1.hubspotusercontent-na1.net/hubfs/510411/aeforia---prelude.jpg');">
 										<div class="block flex-1 bg-white h-[95px] px-4 glass">
-											<h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[90%] 2xl:max-w-none">Balistic Wave Collection #1</h4>
+											<h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[90%] 2xl:max-w-none">Trending Ui Theme</h4>
 											<div class="flex items-center justify-between font-bold text-[0.625rem]">
 												<div class="flex flex-col">
-													<span class="text-[#646464]">Curent Bid</span>
+													<span class="text-[#646464]"></span>
 													<span class="flex items-center space-x-1 text-[#161616]">
-														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C3.5815 16 0 12.4185 0 8C0 3.5815 3.5815 0 8 0C12.4185 0 16 3.5815 16 8C16 12.4185 12.4185 16 8 16ZM11.997 8.1095L8.249 2L4.5 8.11L8.249 10.2865L11.997 8.1095ZM12 8.808L8.249 10.9835L4.5 8.8085L8.249 13.9975L12 8.808Z" fill="#F1F1F1" />
-															<path d="M8.24902 2V6.435L11.9975 8.11L8.24902 2ZM8.24902 10.984V13.9975L12 8.808L8.24902 10.984Z" fill="blue" fill-opacity="0.298" />
-															<path d="M8.24902 10.2865L11.9975 8.11003L8.24902 6.43604V10.2865Z" fill="blue" fill-opacity="0.801" />
-															<path d="M4.5 8.11003L8.249 10.2865V6.43604L4.5 8.11003Z" fill="blue" fill-opacity="0.298" />
-														</svg>
-														<span>0.2 ETH</span>
+														<span>Trending UI</span>
 													</span>
 												</div>
 												<div>
 													<button type="button" class="text-[#161616] hover:text-[#E730CA] border rounded-full border-[#161616] hover:border-[#E730CA] w-12 h-6 transition-colors">
-														Bid
+														use
 													</button>
 												</div>
 											</div>
@@ -402,29 +369,23 @@
 								</template>
 							</ul>
 						</section>
-
-						<section x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))" :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel">
+ -->
+						<!-- <section x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))" :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel">
 							<ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 								<template x-for="_ in Array.from({ length: 6 })">
 									<li class="col-span-1 flex items-end w-full h-[315px] rounded-2xl 2xl:rounded-3xl bg-center bg-cover bg-no-repeat hover:scale-95 overflow-hidden transition-transform duration-300" style="background-image: url('https://www.todaynftnews.com/wp-content/uploads/2022/12/5-Dec-1-1.jpg');">
 										<div class="block flex-1 bg-white h-[95px] px-4 glass">
-											<h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[90%] 2xl:max-w-none">Balistic Wave Collection #1</h4>
+											<h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[90%] 2xl:max-w-none">Light Ui Theme</h4>
 											<div class="flex items-center justify-between font-bold text-[0.625rem]">
 												<div class="flex flex-col">
-													<span class="text-[#646464]">Curent Bid</span>
+													<span class="text-[#646464]"></span>
 													<span class="flex items-center space-x-1 text-[#161616]">
-														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C3.5815 16 0 12.4185 0 8C0 3.5815 3.5815 0 8 0C12.4185 0 16 3.5815 16 8C16 12.4185 12.4185 16 8 16ZM11.997 8.1095L8.249 2L4.5 8.11L8.249 10.2865L11.997 8.1095ZM12 8.808L8.249 10.9835L4.5 8.8085L8.249 13.9975L12 8.808Z" fill="#F1F1F1" />
-															<path d="M8.24902 2V6.435L11.9975 8.11L8.24902 2ZM8.24902 10.984V13.9975L12 8.808L8.24902 10.984Z" fill="blue" fill-opacity="0.298" />
-															<path d="M8.24902 10.2865L11.9975 8.11003L8.24902 6.43604V10.2865Z" fill="blue" fill-opacity="0.801" />
-															<path d="M4.5 8.11003L8.249 10.2865V6.43604L4.5 8.11003Z" fill="blue" fill-opacity="0.298" />
-														</svg>
-														<span>0.2 ETH</span>
+														<span>3</span>
 													</span>
 												</div>
 												<div>
 													<button type="button" class="text-[#161616] hover:text-[#E730CA] border rounded-full border-[#161616] hover:border-[#E730CA] w-12 h-6 transition-colors">
-														Bid
+														use
 													</button>
 												</div>
 											</div>
@@ -438,23 +399,17 @@
 								<template x-for="_ in Array.from({ length: 8 })">
 									<li class="col-span-1 flex items-end w-full h-[315px] rounded-2xl 2xl:rounded-3xl bg-center bg-cover bg-no-repeat hover:scale-95 overflow-hidden transition-transform duration-300" style="background-image: url('https://miro.medium.com/v2/resize:fit:1358/0*PWtWYLkyR16QCPIk');">
 										<div class="block flex-1 bg-white h-[95px] px-4 glass">
-											<h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[90%] 2xl:max-w-none">Balistic Wave Collection #1</h4>
+											<h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[90%] 2xl:max-w-none">Landing Ui</h4>
 											<div class="flex items-center justify-between font-bold text-[0.625rem]">
 												<div class="flex flex-col">
-													<span class="text-[#646464]">Curent Bid</span>
+													<span class="text-[#646464]"></span>
 													<span class="flex items-center space-x-1 text-[#161616]">
-														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C3.5815 16 0 12.4185 0 8C0 3.5815 3.5815 0 8 0C12.4185 0 16 3.5815 16 8C16 12.4185 12.4185 16 8 16ZM11.997 8.1095L8.249 2L4.5 8.11L8.249 10.2865L11.997 8.1095ZM12 8.808L8.249 10.9835L4.5 8.8085L8.249 13.9975L12 8.808Z" fill="#F1F1F1" />
-															<path d="M8.24902 2V6.435L11.9975 8.11L8.24902 2ZM8.24902 10.984V13.9975L12 8.808L8.24902 10.984Z" fill="blue" fill-opacity="0.298" />
-															<path d="M8.24902 10.2865L11.9975 8.11003L8.24902 6.43604V10.2865Z" fill="blue" fill-opacity="0.801" />
-															<path d="M4.5 8.11003L8.249 10.2865V6.43604L4.5 8.11003Z" fill="blue" fill-opacity="0.298" />
-														</svg>
-														<span>0.2 ETH</span>
+														<span>4</span>
 													</span>
 												</div>
 												<div>
 													<button type="button" class="text-[#161616] hover:text-[#E730CA] border rounded-full border-[#161616] hover:border-[#E730CA] w-12 h-6 transition-colors">
-														Bid
+														use
 													</button>
 												</div>
 											</div>
@@ -492,8 +447,8 @@
 								</template>
 							</ul>
 						</section>
-
-						<section x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))" :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel">
+ -->
+						<!-- <section x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))" :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel">
 							<ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 								<template x-for="_ in Array.from({ length: 2 })">
 									<li class="col-span-1 flex items-end w-full h-[315px] rounded-2xl 2xl:rounded-3xl bg-center bg-cover bg-no-repeat hover:scale-95 overflow-hidden transition-transform duration-300" style="background-image: url('https://cdn.mos.cms.futurecdn.net/Paxp7F5dLhbaMwT7K2LxoM.jpg');">
@@ -521,7 +476,7 @@
 									</li>
 								</template>
 							</ul>
-						</section>
+						</section> -->
 					</div>
 					<div class="flex justify-center">
 						<a href="#" class="inline-block rounded-xl bg-[#E730CA] px-4 py-2.5 mt-6 font-semibold text-sm xl:text-base text-white text-center border border-transparent hover:border-[#E730CA] hover:bg-transparent focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-transparent transition-colors">Discover More!</a>
@@ -661,3 +616,8 @@
 		</div>
 	</div>
 	</di>
+<!-- partial -->
+  <script src='https://cdn.tailwindcss.com'></script>
+<script src='https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js'></script>
+</body>
+</html>
