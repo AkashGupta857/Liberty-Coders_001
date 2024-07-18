@@ -10,7 +10,7 @@ body {
 .bg{
     position: absolute;
     z-index: -1;
-    background-image: url("assets/middlebag.png");
+    background-image: url("middlebag.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
