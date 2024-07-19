@@ -19,6 +19,7 @@ section#support{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
     margin-bottom: 200px;
     background:linear-gradient(#8000ff,black);
 
