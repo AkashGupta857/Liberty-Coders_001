@@ -20,9 +20,12 @@ body{
     border: none;
     background-color: white;
     border: 1px solid gray;
+    transition: background-color 1s;
 }
 .example > a > button:hover{
     cursor: pointer;
+    background-color: black;
+    color : white;
 }
 .example p:nth-of-type(1){
     max-width: 50rem;
