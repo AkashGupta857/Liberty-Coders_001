@@ -35,7 +35,7 @@ body {
 }
 .sidebar {
   width: 240px;
-  min-height: 100vh;
+  height: 100vh;
   top:0px;
   background: #000;
   position: absolute;
@@ -109,9 +109,11 @@ body {
 .cont{
   display: none;
   width: 1200px;
+  height: 100vh;
   margin-left: 19rem;
   background-color: white;
   color: black;
+  overflow:auto;
 }
 
 
