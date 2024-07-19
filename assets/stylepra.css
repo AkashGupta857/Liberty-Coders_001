@@ -21,7 +21,8 @@ section#support{
     align-items: center;
     padding-top: 50px;
     margin-bottom: 200px;
-    background:linear-gradient(#8000ff,black);
+    background:linear-gradient(to bottom,#000,#5704a3,#8000FF,#000);
+
 
 }
 
@@ -135,10 +136,13 @@ section#support>div>div>div:nth-of-type(2)>div:nth-of-type(2) button{
    background-color: #8000ff;
    border:none;
    border-radius: 12px;
+   color: whitesmoke
 }
 section#support>div>div>div:nth-of-type(2)>div:nth-of-type(2) button:hover{
     background-color: transparent;
     border: 1px solid #8000ff;
+   
+    
 }
 
 
@@ -191,9 +195,7 @@ section#support>div>div>div:nth-of-type(4){
     
 }
 
-.ui_support>div{
-    
-}
+
 .ui_support>div>ul{
     margin: 0;
     padding: 0; 
