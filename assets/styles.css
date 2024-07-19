@@ -16,8 +16,11 @@ body {
     background-position: top;
     width: -webkit-fill-available;
     height: 100vh;
-    
+
+
 }
+
+
 nav img {
   width: 200px;
   height: 88px;
@@ -225,6 +228,7 @@ section.ad{
 section.ad>div.contad{
     
 	margin: 200px auto;
+
 	max-width: 1320px;
 	display: flex;
     flex-direction: column;
@@ -288,10 +292,11 @@ section.ad>div.contad>h1.ad{
 }
 section.ee{
     background-color: #000;
-    height: 400px;
+    
     color: whitesmoke;
     font-family: "poppins",sans-serif;
-    
+    margin-top: 50px;
+    margin-bottom: 200px;
 
 }
 .contee{
@@ -299,14 +304,14 @@ section.ee{
     max-width: 1320px;
     display:flex;
     flex-direction: column;
-
+   
     justify-content: center;
     align-items: center;
     gap: 30px
 
 }
 .contee>h1{
-    margin-top: 30px;
+    
     font-family: "Edu AU VIC WA NT Hand";
     font-size: 48px;
     font-weight: 900;
@@ -318,5 +323,22 @@ section.ee{
     font-size: 20px;
     width: 600px;
     text-align: center;
+
+}
+.eegrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 500px;
+  
+
+
+}
+.eecard{
+  border-left: 2px solid #8000FF;
+  padding: 30px;
+  margin: 80px;
+}
+.contee .eecard>h1{
+  font-size: 70px;
 
 }
