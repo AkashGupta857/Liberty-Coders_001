@@ -24,37 +24,56 @@ let cont22 = document.querySelector(".cont22")
 let cont23 = document.querySelector(".cont23")
 let cont24 = document.querySelector(".cont24")
 let pre = 0
-let next = 0
+let next = 1
 onclick.forEach(obj => {
     obj.addEventListener("click", function(){    
         if(obj.classList.value == 1){
             cont1.style.display="block"
-            pre = next
+            if(next != 1){
+                pre = next
+            }
             next = 1
         }
         if(obj.classList.value == 2){
             cont2.style.display = "block"
-            pre = next
+            if(next != 2){
+                pre = next
+            }
             next = 2
         }
         if(obj.classList.value==3){
-            cont3.style.display = "block"
-            pre = next
+            if(next != 3){
+                pre = next
+            }
+            cont3.style.display = "block"            
             next = 3
         }
         if(obj.classList.value==4){
+            if(next != 4){
+                pre = next
+            }
             cont4.style.display = "block"
-            pre = next
             next = 4
         }
         if(obj.classList.value==5){
             cont5.style.display = "block"
-            pre = next
+            if(next != 5){
+                pre = next
+            }
             next = 5
         }
         if(obj.classList.value==6){
             cont6.style.display = "block"
-            pre = next
+            if(next != 6){
+                pre = next
+            }
+            next = 6
+        }
+        if(obj.classList.value==7){
+            cont7.style.display = "block"
+            if(next != 7){
+                pre = next
+            }
             next = 6
         }
         if(pre == 1){
@@ -75,7 +94,8 @@ onclick.forEach(obj => {
         if(pre==6){
             cont6.style.display = "none"
         }
-
+        if(pre==7){
+            cont7.style.display = "none"
+        }
     })
 })  
-console.log("after")

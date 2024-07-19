@@ -15,7 +15,7 @@
       <li>
         <a href="/index.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
       </li>
-      <li class="sub-menu">
+      <li class="sub-menu active">
         <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>Getting Started</span><i class="arrow fa fa-angle-right pull-right"></i></a>
         <ul>
           <li class="1"><a>Parcel</a></li>
@@ -29,84 +29,37 @@
       <li class="sub-menu">
         <a href="javascript:void(0);"><i class="fa fa-table"></i><span>Overview</span><i class="arrow fa fa-angle-right pull-right"></i></a>
         <ul>
-            <li class="7"><a>Sass</a></li>
-            <li class="8"><a>Options</a></li>
-            <li class="9"><a>Color</a></li>
-            <li class="10"><a>Components</a></li>
+            <li class="7"><a>Options</a></li>
+            <li class="8"><a>Components</a></li>
         </ul>
       </li>
       <li class="sub-menu">
         <a href="javascript:void(0);"><i class="fa fa fa-tasks"></i><span>Layout</span><i class="arrow fa fa-angle-right pull-right"></i></a>
         <ul>
-          <li class="11"><a>Breakpoints</a></li>
-          <li class="12"><a>Containers</a></li>
-          <li class="13"><a>Grid</a></li>
-          <li class="14"><a>Columns</a></li>
-          <li class="15"><a>Gutters</a></li>
-        </ul>
-      </li>
-      <li class="sub-menu active">
-        <a href="javascript:void(0);"><i class="fa fa-envelope"></i><span>Content</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-        <ul>
-          <li class="16"><a>Reboot</a></li>
-          <li class="17"><a>Typography</a></li>
-          <li class="18"><a>Images</a></li>
-          <li class="19"><a>Tables</a></li>
+          <li class="10"><a>Containers</a></li>
+          <li class="11"><a>Grid</a></li>
+          <li class="12"><a>Columns</a></li>
         </ul>
       </li>
       <li class="sub-menu">
-        <a href="javascript:void(0);"><i class="fa fa-bar-chart-o"></i><span>Forms</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+        <a href="javascript:void(0);"><i class="fa fa-envelope"></i><span>Templates</span><i class="arrow fa fa-angle-right pull-right"></i></a>
         <ul>
-            <li class="20"><a>Overview</a></li>
-            <li class="21"><a>Form control</a></li>
-            <li class="22"><a>Select</a></li>
-            <li class="23"><a>Checks & radios</a></li>
-            <li class="24"><a>Range</a></li>
+          <li class="13"><a>Template List</a></li>
+          <li class="14"><a>See all Template</a></li>
         </ul>
       </li>
-      <li class="sub-menu">
-        <a href="javascript:void(0);"><i class="fa fa-map-marker"></i><span>Maps</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-        <ul>
-          <li><a href="map-google.html">Google Map</a>
-          </li>
-          <li><a href="map-vector.html">Vector Map</a>
-          </li>
-        </ul>
-      </li>
-      <li class="sub-menu">
-        <a href="typography.html"><i class="fa fa-text-height"></i><span>Typography</span></a>
-      </li>
-      <!-- <li class="sub-menu">
-        <a href="javascript:void(0);"><i class="fa fa-file"></i><span>Pages</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-        <ul>
-          <li><a href="pages-blank.html">Blank Page</a>
-          </li>
-          <li><a href="pages-login.html">Login</a>
-          </li>
-          <li><a href="pages-sign-up.html">Sign Up</a>
-          </li>
-          <li><a href="pages-calendar.html">Calendar</a>
-          </li>
-          <li><a href="pages-timeline.html">Timeline</a>
-          </li>
-          <li><a href="pages-404.html">404</a>
-          </li>
-          <li><a href="pages-500.html">500</a>
-          </li>
-        </ul>
-      </li> -->
     </ul>
   </div>
   
 </aside>
 <div class="cont cont1">
-    <h1>Bootstrap and Parcel</h1>
-    <p>The official guide for how to include and bundle Bootstrap’s CSS and JavaScript in your project using Parcel.</p>
-    <img src="assets/1.png" alt="">
-    <h1>Setup</h1>
+    <h1 >Bootstrap and Parcel <a href="">#</a></h1>
+    <p>The official guide for how to include and bundle <a href="">Bootstrap's</a> CSS and JavaScript in your project using Parcel.</p>
+    <img src="1.png" alt="">
+    <h1>Setup <a href="">#</a></h1>
     <p>We’re building a Parcel project with Bootstrap from scratch, so there are some prerequisites and upfront steps before we can really get started. This guide requires you to have Node.js installed and some familiarity with the terminal.</p>
     <ol>
-      <li>Create a project folder and set up npm. We’ll create the my-project folder and initialize npm with the -y argument to avoid it asking us all the interactive questions.</li>
+      <li><span style="color: rgb(80, 80, 239);">Create</span> a project folder and set up npm. We’ll create the my-project folder and initialize npm with the -y argument to avoid it asking us all the interactive questions.</li>
       <li>Install Parcel. Unlike our Webpack guide, there’s only a single build tool dependency here. Parcel will automatically install language transformers (like Sass) as it detects them. We use --save-dev to signal that this dependency is only for development use and not for production.</li>
       <li>Install Bootstrap. Now we can install Bootstrap. We’ll also install Popper since our dropdowns, popovers, and tooltips depend on it for their positioning. If you don’t plan on using those components, you can omit Popper here.</li>
     </ol>
@@ -119,8 +72,6 @@
     <p>With dependencies installed and our project folder ready for us to start coding, we can now configure Parcel and run our project locally. Parcel itself requires no configuration file by design, but we do need an npm script and an HTML file to start our server.</p>
     <ol>
       <li>Fill in the src/index.html file. Parcel needs a page to render, so we use our index.html page to set up some basic HTML, including our CSS and JavaScript files.</li>
-      <!-- <p>We’re including a little bit of Bootstrap styling here with the div class="container" and <button> so that we see when Bootstrap’s CSS is loaded by Parcel.</p>
-      <p>Parcel will automatically detect we’re using Sass and install the Sass Parcel plugin to support it. However, if you wish, you can also manually run npm i --save-dev @parcel/transformer-sass.</p> -->
       <li>Add the Parcel npm scripts. Open the package.json and add the following start script to the scripts object. We’ll use this script to start our Parcel development server and render the HTML file we created after it’s compiled into the dist directory.</li>
       <li>And finally, we can start Parcel. From the my-project folder in your terminal, run that newly added npm script:</li>
     </ol>
@@ -315,7 +266,7 @@
   <p>Generally speaking, Bootstrap supports the latest versions of each major platform’s default browsers. Note that proxy browsers (such as Opera Mini, Opera Mobile’s Turbo mode, UC Browser Mini, Amazon Silk) are not supported.</p>
 </div>
 <div class="cont cont5">
-  <h1>javascript</h1>
+  <h1>Javascript</h1>
   <p>Bring Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.</p>
   <h1>Individual or complied</h1>
   <p>Plugins can be included individually (using Bootstrap’s individual js/dist/*.js), or all at once using bootstrap.js or the minified bootstrap.min.js (don’t include both).</p>
@@ -335,8 +286,8 @@
 </div>
 <div class="cont cont6">
   <h1>Bootstrap and Webpack</h1>
-  <p>The official guide for how to include and bundle Bootstrap’s CSS and JavaScript in your project using Webpack.</p>
-  <img src="assets/2.png" alt="">
+  <p>The official guide for how to include and bundle <a href="">Bootstrap</a> CSS and JavaScript in your project using Webpack.</p>
+  <img src="2.png" alt="">
   <h1>Setup</h1>
   <p>We’re building a Webpack project with Bootstrap from scratch, so there are some prerequisites and upfront steps before we can really get started. This guide requires you to have Node.js installed and some familiarity with the terminal.</p>
   <ol>
@@ -348,7 +299,26 @@
   <h1>Project structure</h1>
   <p>We’ve already created the my-project folder and initialized npm. Now we’ll also create our src and dist folders to round out the project structure. Run the following from my-project, or manually create the folder and file structure shown below.</p>
 </div>
-<div class="cont cont7"></div>
+<div class="cont cont7">
+  <h1>Options</h1>
+  <p>Bring Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.</p>
+  <h1>Individual or complied</h1>
+  <p>Plugins can be included individually (using Bootstrap’s individual js/dist/*.js), or all at once using bootstrap.js or the minified bootstrap.min.js (don’t include both).</p>
+  <p>If you use a bundler (Webpack, Parcel, Vite…), you can use /js/dist/*.js files which are UMD ready.</p>
+  <h1>Usage with JavaScript frameworks </h1>
+  <p>While the Bootstrap CSS can be used with any framework, the Bootstrap JavaScript is not fully compatible with JavaScript frameworks like React, Vue, and Angular which assume full knowledge of the DOM. Both Bootstrap and the framework may attempt to mutate the same DOM element, resulting in bugs like dropdowns that are stuck in the “open” position.</p>
+  <p>A better alternative for those using this type of frameworks is to use a framework-specific package instead of the Bootstrap JavaScript. Here are some of the most popular options:</p>
+  <ul>
+    <li>React : React Bootstrap</li>
+    <li>Vue: BootstrapVue (Bootstrap 4)</li>
+    <li>Vue 3: BootstrapVueNext (Bootstrap 5, currently in alpha)</li>
+    <li>Angular: ng-bootstrap</li>
+  </ul>
+  <h1>Using Bootstrap as a module </h1>
+  <p>We provide a version of Bootstrap built as ESM (bootstrap.esm.js and bootstrap.esm.min.js) which allows you to use Bootstrap as a module in the browser, if your targeted browsers support it.</p>
+  <p>Compared to JS bundlers, using ESM in the browser requires you to use the full path and filename instead of the module name. Read more about JS modules in the browser. That’s why we use 'bootstrap.esm.min.js' instead of 'bootstrap' above. However, this is further complicated by our Popper dependency, which imports Popper into our JavaScript like so:</p>
+
+</div>
 <div class="cont cont8"></div>
 <div class="cont cont9"></div>
 <div class="cont cont10"></div>
