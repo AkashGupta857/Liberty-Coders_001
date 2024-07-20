@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(90deg, #800fff, black);
+    padding: 2rem;
+    color: white;
+}
+
+.maincontainer{
+    width: 1320px;
+}
+
+.maincontainer > button{
+    background-color: #2f085b;
+    padding: 10px 2rem;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    transition: background-color 1s;
+    font-family: "Edu AU VIC WA NT Hand";
+}
+.maincontainer > button > a{
+    color: white;
+    text-decoration: none;
+}
+.maincontainer > button:hover{
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+
+.maincontainer > div:nth-of-type(1){
+    border-bottom: 1px solid white;
+    display: inline-block;
+    color: white;
+    border: 1px solid black;
+    margin-top: 1rem;
+    padding: 10px 1rem;
+    border-radius: 10px;
+}
+
+.maincontainer > .components{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.components > .left{
+    width: 48%;
+    height: 30rem;
+}
+.components > .left > button{
+    background-color: black;
+    padding: 10px 1rem;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 1s;
+    margin-bottom: 10px;
+}
+.components > .left > button:hover{
+    cursor: pointer;
+    color:black;
+    background-color: white;
+}
+.components > .left textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.components > .right{
+    width: 48%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.components > .right button{
+    background-color: black;
+    padding: 10px 1rem;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    transition: border 1s;
+    margin-bottom: 10px;
+}
+.components > .right button:hover{
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.components >.right > img{
+    width: 100%;
+    height: 30rem;
+    border-radius: 10px;
+}
+
+.components:nth-of-type(2) > .right{
+    order: -1;
+}
+
+.smallcomponent{
+    display: flex;
+    margin-top: 5rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.smallcomponent > .right{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 2rem 3rem;
+}
+
+.smallcomponent > .right > div{
+    transition: box-shadow 1s;
+}
+.smallcomponent > .right > div:hover{
+    box-shadow: rgba(255, 250, 250, 0.25) 0px 54px 55px, rgba(255, 223, 223, 0.12) 0px -12px 30px, rgba(253, 251, 251, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    cursor: pointer;
+}
+.smallcomponent > .right > div > div{
+    width: 20rem;
+    height: 12rem;
+    border: 1px solid gray;
+    background-color: #F3F4F6;
+    border-radius: 10px;
+}
+.smallcomponent > .right > div > div > img{
+    width: 100%;
+    height: 100%;
+}
+.smallcomponent > .right > div > p:nth-of-type(1){
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.smallcomponent > .right > div > p:nth-of-type(2){
+    color: gray;
+    margin-top: 8px;
+}

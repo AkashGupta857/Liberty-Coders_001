@@ -4,9 +4,510 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./component.css">
 </head>
 <body>
-    
+    <div class="maincontainer">
+        <button><a href="../index.html">⬅️Home page</a></button>
+        <div>Choose Component ➡️</div>
+        <div class="components">
+            <div class="left">
+                <button>Copy Code</button>
+                <textarea name="" id="">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title&gt;Image Animation&lt;/title&gt;
+                        &lt;link rel="stylesheet" href="styles.css"&gt;
+                        &lt;style&gt;
+                            body {
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        background: linear-gradient(pink, lightblue);
+                    }
+                    
+                    .container {
+                        width: 100%;
+                        overflow: hidden;
+                        position: relative;
+                        height: 10rem;
+                    }
+                    
+                    .container img{
+                        width: 10rem;
+                        height: 10rem;
+                        z-index: 2;
+                    }
+                    .animated-image {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    
+                    .tom {
+                        left: -20%;
+                        animation: moveRight 5s infinite;
+                    }
+                    
+                    .jerry {
+                        right: -20%;
+                        animation: moveLeft 5s infinite;
+                    }
+                    
+                    @keyframes moveRight {
+                        0% {
+                            left: -20%;
+                        }
+                        50% {
+                            left: 40%;
+                        }
+                        100% {
+                            left: 70%;
+                        }
+                    }
+                    
+                    @keyframes moveLeft {
+                        0% {
+                            right: -20%;
+                        }
+                        50% {
+                            right: 40%;
+                        }
+                        100% {
+                            right: 70%;
+                        }
+                    }
+                    
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;img src="https://fastly.picsum.photos/id/1/200/300.jpg?hmac=jH5bDkLr6Tgy3oAg5khKCHeunZMHq0ehBZr6vGifPLY" alt="Tom" class="animated-image tom"&gt;
+                            &lt;img src="https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU" alt="Jerry" class="animated-image jerry"&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </textarea>
+            </div>
+            <div class="right">
+                <a href="https://669a6d949171a6460c37a9e6--teal-naiad-78e0ff.netlify.app/" target="_blank">
+                    <button>Preview</button>
+                </a>
+                <img src="preview1.png" alt="">
+            </div>
+        </div>
+        <div class="components">
+            <div class="left">
+                <button>Copy Code</button>
+                <textarea name="" id="">
+                    &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Image Animation&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+    &lt;style&gt;
+        body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(pink, lightblue);
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.container img{
+    width: 10rem;
+    height: 10rem;
+    z-index: 2;
+}
+.animated-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container &gt; div{
+    position: absolute;
+    width: 30%;
+    height: 10rem;
+    background:linear-gradient(90deg,blue, lightblue);
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.container &gt; div:nth-of-type(2), .container &gt; div:nth-of-type(4){
+    border-radius: 20px 0px 0px 20px;
+}
+.container &gt; div:nth-of-type(1){
+    top: 0px;
+    left: 0px;
+}
+.container &gt; div:nth-of-type(2){
+    top: 11rem;
+    right: 0px;
+}
+.container &gt; div:nth-of-type(3){
+    top: 22rem;
+    left: 0px;
+}
+.container &gt; div:nth-of-type(4){
+    top: 33rem;
+    right: 0px;
+}
+.container &gt; div:nth-of-type(1){
+    left: -20%;
+    animation: moveRight 5s infinite;
+}
+.container &gt; div:nth-of-type(3){
+    left: -20%;
+    animation: moveRight 5s infinite;
+}
+
+.container &gt; div:nth-of-type(2) {
+    right: -20%;
+    animation: moveLeft 5s infinite;
+}
+.container &gt; div:nth-of-type(4) {
+    right: -20%;
+    animation: moveLeft 5s infinite;
+}
+
+@keyframes moveRight {
+    0% {
+        left: -20%;
+    }
+    50% {
+        left: 20%;
+    }
+    100% {
+        left: 20%;
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        right: -20%;
+    }
+    50% {
+        right: 20%;
+    }
+    100% {
+        right: 20%;
+    }
+}
+
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;div&gt;Box-1&lt;/div&gt;
+        &lt;div&gt;Box-2&lt;/div&gt;
+        &lt;div&gt;Box-3&lt;/div&gt;
+        &lt;div&gt;Box-4&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </textarea>
+            </div>
+            <div class="right">
+                <a href="https://669a6f1809fafc43a9478985--funny-sunburst-83dec3.netlify.app/" target="_blank">
+                    <button>Preview</button>
+                </a>
+                <img src="preview2.png" alt="">
+            </div>
+        </div>
+        <div class="components">
+            <div class="left">
+                <button>Copy Code</button>
+                <textarea name="" id="">
+                    &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;link rel="stylesheet" href="./styles.css"&gt;
+    &lt;style&gt;
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .cont {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .cont &gt; .cont1 {
+            width: 100%;
+            height: 70%;
+            display: flex;
+        }
+
+        .cont &gt; .cont1 &gt; .left {
+            width: 45%;
+            height: 100%;
+            background-color: darkblue;
+            display: flex;
+            align-items: center;
+        }
+
+        .cont &gt; .cont1 &gt; .left &gt; img {
+            margin-left: 25%;
+        }
+
+        .cont &gt; .cont1 &gt; .right {
+            width: 55%;
+            height: 100%;
+            background-color: rgb(64, 64, 216);
+            display: flex;
+            color: white;
+            align-items: start;
+            justify-content: space-around;
+        }
+
+        .cont &gt; .cont1 &gt; .right &gt; ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            list-style: none;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .cont &gt; .cont1 &gt; .right &gt; ul &gt; li {
+            margin: 1rem 0px;
+            font-size: 14px;
+            font-weight: 100;
+        }
+
+        .cont &gt; .cont1 &gt; .right &gt; ul &gt; li:nth-of-type(1) {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .cont &gt; .cont2 {
+            width: 100%;
+            height: 30%;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .cont .cont2 .left {
+            margin-left: 2rem;
+        }
+
+        .cont .cont2 .right {
+            margin-right: 2rem;
+        }
+
+        .cont .cont2 .right &gt; span {
+            text-decoration: underline;
+        }
+
+        @media (min-width: 425px) and (max-width: 1000px) {
+            .cont &gt; .cont1 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .cont &gt; .cont1 &gt; .right {
+                width: 100%;
+                height: 55%;
+                order: -1;
+            }
+
+            .cont &gt; .cont1 &gt; .right &gt; ul {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .cont &gt; .cont1 &gt; .right &gt; ul &gt; li {
+                margin: 7px 0px;
+            }
+
+            .cont &gt; .cont1 &gt; .left {
+                width: 100%;
+                height: 45%;
+                justify-content: center;
+            }
+
+            .cont &gt; .cont1 &gt; .left &gt; img {
+                height: 80%;
+                margin-left: 0px;
+            }
+
+            .cont &gt; .cont2 {
+                justify-content: center;
+            }
+
+            .cont .cont2 .left {
+                margin-left: 2rem;
+                display: none;
+            }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="cont"&gt;
+        &lt;div class="cont1"&gt;
+            &lt;div class="left"&gt;
+                &lt;img src="https://fastly.picsum.photos/id/800/200/200.jpg?hmac=imZ9apEK2ZrSqIrWpccZeiEbLsyJaN_nx3VrxgTkBBI" alt=""&gt;
+            &lt;/div&gt;
+            &lt;div class="right"&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Shop&lt;/li&gt;
+                    &lt;li&gt;Gift Cards &lt;/li&gt;
+                    &lt;li&gt;Etsy Registry&lt;/li&gt;
+                    &lt;li&gt;Sitemap&lt;/li&gt;
+                    &lt;li&gt;Etsy blog&lt;/li&gt;
+                    &lt;li&gt;Etsy United Kingdom&lt;/li&gt;
+                    &lt;li&gt;Etsy Germany&lt;/li&gt;
+                    &lt;li&gt;Etsy Canada&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Sell&lt;/li&gt;
+                    &lt;li&gt;Sell on Etsy &lt;/li&gt;
+                    &lt;li&gt;Team&lt;/li&gt;
+                    &lt;li&gt;Forums&lt;/li&gt;
+                    &lt;li&gt;Affiliates and Creator&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;About&lt;/li&gt;
+                    &lt;li&gt;Gift Cards &lt;/li&gt;
+                    &lt;li&gt;Etsy Registry&lt;/li&gt;
+                    &lt;li&gt;Sitemap&lt;/li&gt;
+                    &lt;li&gt;Etsy blog&lt;/li&gt;
+                    &lt;li&gt;Etsy United Kingdom&lt;/li&gt;
+                    &lt;li&gt;Etsy Germany&lt;/li&gt;
+                    &lt;li&gt;Etsy Canada&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Shop&lt;/li&gt;
+                    &lt;li&gt;Gift Cards &lt;/li&gt;
+                    &lt;li&gt;Etsy Registry&lt;/li&gt;
+                    &lt;li&gt;Sitemap&lt;/li&gt;
+                    &lt;li&gt;Etsy blog&lt;/li&gt;
+                    &lt;li&gt;Etsy United Kingdom&lt;/li&gt;
+                    &lt;li&gt;Etsy Germany&lt;/li&gt;
+                    &lt;li&gt;Etsy Canada&lt;/li&gt;                    
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="cont2"&gt;
+            &lt;div class="left"&gt;India &nbsp; | &nbsp; English(IN) &nbsp; |&nbsp; ₹(INR)&lt;/div&gt;
+            &lt;div class="right"&gt;
+                &copy; 2024 Etsy, Inc. &nbsp; &nbsp;&lt;span&gt;Term of Use&lt;/span&gt; &nbsp; &nbsp; &lt;span&gt;Privacy &lt;/span&gt; &nbsp; &nbsp; &lt;span&gt;Intereseted-based ads &lt;/span&gt;&nbsp; &nbsp;&lt;span&gt;Local Shops &lt;/span&gt;&nbsp;&nbsp;&lt;span&gt;Regions&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </textarea>
+            </div>
+            <div class="right">
+                <button>Preview</button>
+                <img src="preview3.png" alt="">
+            </div>
+        </div>
+        <div class="smallcomponent">
+            <h2>Page Section</h2>
+            <div class="right">
+                <div>
+                    <div>
+                        <img src="https://tailwindui.com/img/category-thumbnails/marketing/heroes.png" alt="">
+                    </div>
+                    <p>Hero Sections</p>
+                    <p>12 component</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://tailwindui.com/img/category-thumbnails/marketing/heroes.png" alt="">
+                    </div>
+                    <p>Hero Sections</p>
+                    <p>12 component</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://tailwindui.com/img/category-thumbnails/marketing/heroes.png" alt="">
+                    </div>
+                    <p>Hero Sections</p>
+                    <p>12 component</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://tailwindui.com/img/category-thumbnails/marketing/heroes.png" alt="">
+                    </div>
+                    <p>Hero Sections</p>
+                    <p>12 component</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://tailwindui.com/img/category-thumbnails/marketing/heroes.png" alt="">
+                    </div>
+                    <p>Hero Sections</p>
+                    <p>12 component</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://tailwindui.com/img/category-thumbnails/marketing/heroes.png" alt="">
+                    </div>
+                    <p>Hero Sections</p>
+                    <p>12 component</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://tailwindui.com/img/category-thumbnails/marketing/heroes.png" alt="">
+                    </div>
+                    <p>Hero Sections</p>
+                    <p>12 component</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://tailwindui.com/img/category-thumbnails/marketing/heroes.png" alt="">
+                    </div>
+                    <p>Hero Sections</p>
+                    <p>12 component</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://tailwindui.com/img/category-thumbnails/marketing/heroes.png" alt="">
+                    </div>
+                    <p>Hero Sections</p>
+                    <p>12 component</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://tailwindui.com/img/category-thumbnails/marketing/heroes.png" alt="">
+                    </div>
+                    <p>Hero Sections</p>
+                    <p>12 component</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
