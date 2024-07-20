@@ -34,7 +34,7 @@ section#support > div > div {
 }
 
 section#support > div > div > div:nth-of-type(1) > h1 {
- 
+  text-align: center;
   color: whitesmoke;
 	font-size: 40px;
 	font-weight: 700;
@@ -126,17 +126,14 @@ section#support
 }
 
 .ui_support > h1 {
-  margin-bottom: 16px;
-
+  margin-bottom: 70px;
   text-align: center;
-
   color: whitesmoke;
   font-size: 40px;
   font-weight: 700;
   font-family: "poppins", sans-serif;
   text-align: center;
-  width: 550px;
-
+  
   margin-top: 70px;
 }
 
