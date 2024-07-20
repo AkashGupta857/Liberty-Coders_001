@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebEase UI Library</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: whitesmoke;
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+      }
+      * {
+        box-sizing: border-box;
+        line-height: 50px;
+      }
+
+      .bg {
+        position: absolute;
+        z-index: -1;
+        background-image: url("middlebag.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        width: 100%;
+        height: 100vh;
+      }
+
+      .container {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 30px;
+      }
+
+      h1 {
+        font-family: "Edu AU VIC WA NT Hand", cursive;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+
+      .author {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .author img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        object-fit: cover;
+      }
+
+      .author span {
+        margin-right: 10px;
+      }
+
+      .text-muted {
+        color: whitesmoke;
+      }
+
+      .section {
+        margin-bottom: 40px;
+      }
+
+      h2 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      code {
+        background-color: #222;
+        color: #f8f8f2;
+        padding: 2px 5px;
+        border-radius: 4px;
+      }
+      nav{
+        margin-bottom: 100px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <nav>
+      <div class="header">
+        <a href="/index.html"><img src="logo.png" alt="logo" /></a>
+        <div class="links">
+          <a href="docs.html">Docs</a>
+          <a href="example.html" >Examples</a>
+          <a href="#">Components</a>
+          <a href="templates.html">Templates</a>
+          <a href="assets/blog.html" style="display: none; ">Blog</a>
+          
+        </div>
+
+        <div class="media">
+          
+          <a href="https://github.com/akdon9811/Liberty-Coders_001" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+
+          <i class="fa-brands fa-twitter fa-xl"></i>
+          <a href="blog.html"><i class="fa-solid fa-arrow-right fa-xl"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>WebEase UI Library</h1>
+      <div class="author">
+        <img
+          src="https://images.unsplash.com/photo-1581091877286-979c6f103cad?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Author"
+        />
+        <div>
+          <span>@Emma_</span>
+          <span class="text-muted">|</span>
+          <span class="text-muted">July 19, 2024</span>
+        </div>
+      </div>
+      <p>
+        WebEase UI Library v1.0.0 is here with bug fixes, documentation
+        improvements, and more follow-up enhancements for color modes. Keep
+        reading for the highlights!
+      </p>
+      <div class="section">
+        <h2>Highlights</h2>
+        <ul>
+          <li>
+            Fixed a breaking change introduced with color modes where it was
+            required to manually import <code>variables-dark.scss</code> when
+            building with Sass. Now, <code>_variables.scss</code> will
+            automatically import <code>_variables-dark.scss</code>.
+          </li>
+          <li>
+            Fixed a regression in the selector engine that wasn’t able to handle
+            multiple IDs anymore.
+          </li>
+          <li>
+            Enhanced accessibility features to ensure better usability for
+            people with disabilities.
+          </li>
+          <li>
+            Improved documentation with more detailed examples and better
+            structure.
+          </li>
+          <li>
+            Optimized performance for faster load times and smoother user
+            experience.
+          </li>
+          <li>
+            Added support for RTL (right-to-left) languages to cater to a
+            broader audience.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="con"
+      style="
+        background: linear-gradient(to bottom, #000, #5704a3, #8000ff, #000);
+      "
+    >
+      <div class="container">
+        <div class="section">
+          <h2>New Features</h2>
+          <ul>
+            <li>
+              Integrated with popular frontend frameworks like React, Angular,
+              and Vue for seamless development.
+            </li>
+            <li>
+              Added a set of new UI components including modals, tooltips, and
+              carousels.
+            </li>
+            <li>
+              Introduced a drag-and-drop builder for faster and more intuitive
+              UI design.
+            </li>
+            <li>
+              Implemented a responsive grid system that adapts to different
+              screen sizes and orientations.
+            </li>
+            <li>
+              Provided extensive theming options to match any branding
+              requirements.
+            </li>
+            <li>
+              Enhanced plugin architecture to allow easy addition of third-party
+              functionalities.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="section">
+        <h2>Color Modes</h2>
+        <ul>
+          <li>
+            Badges now use the <code>.text-bg-*</code> text utilities to be
+            certain that the text is always readable (especially when the
+            customized colors are different in light and dark modes).
+          </li>
+          <li>
+            Used our <code>color-modes.js</code> script to handle the case where
+            the OS is set to light mode and the auto dark mode switch is
+            enabled.
+          </li>
+          <li>
+            Introduced a new dark mode palette that is easier on the eyes during
+            extended use.
+          </li>
+          <li>
+            Added a customizable color scheme feature to allow users to create
+            their own themes.
+          </li>
+          <li>
+            Improved contrast ratios for better readability in all color modes.
+          </li>
+          <li>
+            Included new color utilities for easier and more flexible
+            customization.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/7fb19bf36c.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
