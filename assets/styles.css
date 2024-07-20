@@ -318,14 +318,24 @@ section.ee {
 .contee .eecard > h1 {
   font-size: 70px;
 }
+#foot{
+  padding: 100px;
+  font-family: "poppins" sans-serif;
+}
 .footer1 {
   margin: 60px 0;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+  
 }
 
 .footer_icon {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+a.footer_a{
+  font-family: "poppins" ,sans-serif;
 }
 .footer_pic {
   width: 13%;
@@ -347,6 +357,7 @@ section.ee {
   list-style: none;
   display: inline;
   padding-right: 50px;
+ 
 }
 .footer_social > ul > .text {
   list-style: none;
@@ -354,7 +365,7 @@ section.ee {
   color: whitesmoke;
   font-size: 16px;
   font-weight: 700;
-  font-family: poppins, sans-serif;
+  font-family: "poppins", sans-serif;
   padding-right: 36px;
 }
 
@@ -367,7 +378,7 @@ section.ee {
   color: whitesmoke;
   font-size: 16px;
   font-weight: 700;
-  font-family: poppins, sans-serif;
+  font-family: "poppins", sans-serif;
   padding-right: 36px;
 }
 
@@ -387,9 +398,7 @@ section.ee {
 }
 
 .footer_a:hover {
-  color: rgb(128, 0, 255);
+  color: #8000ff;
 }
 
-hr {
-  color: red;
-}
+

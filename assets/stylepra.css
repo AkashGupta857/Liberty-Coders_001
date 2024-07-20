@@ -34,7 +34,7 @@ section#support > div > div {
 }
 
 section#support > div > div > div:nth-of-type(1) > h1 {
- 
+  text-align: center;
   color: whitesmoke;
 	font-size: 40px;
 	font-weight: 700;
@@ -126,17 +126,14 @@ section#support
 }
 
 .ui_support > h1 {
-  margin-bottom: 16px;
-
+  margin-bottom: 70px;
   text-align: center;
-
   color: whitesmoke;
   font-size: 40px;
   font-weight: 700;
   font-family: "poppins", sans-serif;
   text-align: center;
-  width: 550px;
-
+  
   margin-top: 70px;
 }
 
@@ -210,7 +207,7 @@ section#fast > div > div:nth-of-type(1) > h1 > span {
 
 section#fast > div > div:nth-of-type(1) > p {
   color: whitesmoke;
-  font-family: poppins, sans-serif;
+  font-family: "poppins", sans-serif;
   font-size: 20px;
   width: 600px;
   margin: auto;
@@ -224,13 +221,13 @@ section#fast > div > div:nth-of-type(1) > div {
   align-items: center;
 }
 
-section#fast > div > div:nth-of-type(1) > div a {
+section#fast > div > div:nth-of-type(1) > div a  {
   background-color: #8000ff;
   background-color: #8000ff;
   color: whitesmoke;
 
   width: 150px;
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
 
   border-style: none;
 
@@ -244,8 +241,7 @@ section#fast > div > div:nth-of-type(1) > div a:hover {
   background-color: transparent;
   border: 1px solid #8000ff;
 }
-section#fast > div > div:nth-of-type(2) {
-}
+
 section#fast > div > div:nth-of-type(2) img {
   width: 100%;
 }
