@@ -38,6 +38,7 @@ div.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .search-bar {
   font-family: "Poppins", sans-serif;
@@ -80,6 +81,13 @@ div.header {
   color: #7431fa;
   border: 0.5px solid #7431fa;
   color: whitesmoke;
+}
+.header > img:nth-of-type(2){
+  height: 4rem;
+  display: none;
+}
+.links2{
+  display: none;
 }
 .links {
   display: flex;
@@ -401,4 +409,29 @@ a.footer_a{
   color: #8000ff;
 }
 
-
+@media (max-width:900px){
+  .header > img:nth-of-type(2){
+    display: block;
+    cursor: pointer;
+  }
+  .links{
+    display: none;
+  }
+  .media{
+    display: none;
+  }
+  .links2{
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: absolute;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    top: 100%;
+  }
+  .links2 > a{
+    display: block;
+    padding: 1rem 0px;
+  }
+}
