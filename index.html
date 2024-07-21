@@ -5,6 +5,18 @@
     <title>WebEase</title>
     <link rel="stylesheet" href="assets/styles.css" />
     <link rel="stylesheet" href="assets/stylepra.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css"
+    />
   </head>
   <body>
     <div class="bg"></div>
@@ -13,15 +25,7 @@
         <img src="assets/logo.png" alt="logo" />
         <div class="links">
           <a href="assets/docs.html">Docs</a>
-          <!-- <a href="assets/example.html" >Examples</a> -->
-          <a href="assets/component.html">Components</a>
-          <a href="assets/templates.html">Templates</a>
-          <a href="assets/blog.html">Blog</a>
-        </div>
-        <img src="hamburger.webp" alt="">
-        <div class="links2">
-          <a href="assets/docs.html">Docs</a>
-          <!-- <a href="assets/example.html" >Examples</a> -->
+          <a href="assets/example.html" >Examples</a>
           <a href="assets/component.html">Components</a>
           <a href="assets/templates.html">Templates</a>
           <a href="assets/blog.html">Blog</a>
@@ -59,9 +63,154 @@
           />
           <button type="button" for="search-bar">Search</button>
         </div>
-        <button type="button" id="SIGN">Get Started →</button>
+        <a href="assets/templates.html"
+          ><button type="button" id="SIGN">Get Started →</button></a
+        >
       </div>
     </div>
+    <h1 id="cc">Explore Components Like This →</h1>
+    <div class="codecont">
+    
+      <div class="container mt-5">
+        <div class="code-container">
+          <textarea id="code-editor">
+<div class="Iam">
+<p>This is</p>
+<b>
+<div class="innerIam">
+leggera<br /> 
+a theme in progress<br /> 
+built on bootstrap<br />
+how I learn stuff<br />
+how we do it
+</div>
+</b>
+      
+</div>
+
+<style>
+  body {
+  background: #2d2d2d;
+}
+
+.Iam {
+  padding: 2em 5em;
+  font: normal 40px/50px Montserrat, sans-serif;
+  color: #999;
+}
+.Iam p {
+  height: 50px;
+  float: left;
+  margin-right: 0.3em;
+}
+.Iam b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  top: 40px;
+}
+.Iam .innerIam {
+  display: inline-block;
+  color: #e74c3c;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+
+
+/*animation*/
+-webkit-animation:move 5s;
+   -moz-animation:move 5s;
+    -ms-animation:move 5s;
+     -o-animation:move 5s;
+        animation:move 5s;
+/*animation-iteration-count*/
+-webkit-animation-iteration-count:infinite;
+   -moz-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+     -o-animation-iteration-count:infinite;
+        animation-iteration-count:infinite;
+/*animation-delay*/
+-webkit-animation-delay:1s;
+   -moz-animation-delay:1s;
+    -ms-animation-delay:1s;
+     -o-animation-delay:1s;
+        animation-delay:1s;
+}
+@keyframes move{
+0%  { top: 0px; }
+20% { top: -50px; }
+40% { top: -100px; }
+60% { top: -150px; }
+80% { top: -200px; }
+}
+
+@-webkit-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-moz-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-o-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+</style>
+      </textarea
+          >
+          <button class="copy-button" onclick="copyCode()">Copy</button>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="img" style="position: relative;
+            display: inline-block;"><img src="assets/image.png" alt="pre">
+          <a href="https://codepen.io/Adeeba-Naushad/pen/MWMggzM" target="_blank" class="button-link">Preview</a></div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/sass/sass.min.js"></script>
+    <script>
+      const editor = CodeMirror.fromTextArea(
+        document.getElementById("code-editor"),
+        {
+          lineNumbers: true,
+          mode: "sass",
+          theme: "dracula",
+        }
+      );
+
+      function copyCode() {
+        const code = editor.getValue();
+        navigator.clipboard
+          .writeText(code)
+          .then(() => {
+            alert("Code copied to clipboard!");
+          })
+          .catch((err) => {
+            console.error("Failed to copy code: ", err);
+          });
+      }
+    </script>
 
     <section class="ab">
       <div class="contab">
@@ -132,7 +281,7 @@
         <h6>Checkout Some Trending Templates and Components →</h6>
         <div class="components">
           <div class="cardcd">
-            <a href="#"
+            <a href="assets/templates.html"
               ><img
                 src="https://echobind.com/_next/image?url=%2Fimages%2Fprojects%2Fkoala.jpg&w=640&q=75"
                 alt="layout"
@@ -140,7 +289,7 @@
             <h6>Main Section</h6>
           </div>
           <div class="cardcd">
-            <a href="#"
+            <a href="assets/templates.html"
               ><img
                 src="https://echobind.com/_next/image?url=%2Fimages%2Fprojects%2Fgym.jpg&w=640&q=75"
                 alt="layout"
@@ -149,7 +298,7 @@
             <h6>Main Section Type 2</h6>
           </div>
           <div class="cardcd">
-            <a href="#"
+            <a href="assets/templates.html"
               ><img
                 src="https://echobind.com/_next/image?url=%2Fimages%2Fprojects%2Fteledoc.jpg&w=640&q=75"
                 alt="layout"
@@ -158,7 +307,7 @@
             <h6>Carousel With Main</h6>
           </div>
           <div class="cardcd">
-            <a href="#"
+            <a href="assets/templates.html"
               ><img
                 src="https://echobind.com/_next/image?url=%2Fimages%2Fprojects%2Fclerestory.jpg&w=640&q=75"
                 alt="layout"
@@ -167,7 +316,7 @@
             <h6>Section With Dashboard</h6>
           </div>
           <div class="cardcd">
-            <a href="#"
+            <a href="assets/templates.html"
               ><img
                 src="https://echobind.com/_next/image?url=%2Fimages%2Fprojects%2Frecipe.jpg&w=640&q=75"
                 alt="layout"
@@ -176,7 +325,9 @@
             <h6>Hero Section with Dark Theme</h6>
           </div>
         </div>
-        <button type="button" id="SIGN">View More...</button>
+        <a href="assets/templates.html">
+          <button type="button" id="SIGN">View More...</button></a
+        >
       </div>
     </section>
     <section class="ee">
@@ -218,7 +369,7 @@
             <h1>Support WebEase UI 💖</h1>
             <p>
               Our maintainers devote their time, effort, and heart to ensure
-              Chakra UI keeps getting better. Support us by donating to our
+              WebEase UI keeps getting better. Support us by donating to our
               collective 🙏
             </p>
           </div>
@@ -528,16 +679,11 @@
                 <li class="text">Follow Us -</li>
                 <li>
                   <i
-                    class="fa-brands fa-facebook  fa-xl"
+                    class="fa-brands fa-facebook fa-xl"
                     style="color: whitesmoke"
                   ></i>
                 </li>
-                <li>
-                  <i
-                    class="fa-brands twitter fa-xl"
-                    style="color: whitesmoke"
-                  ></i>
-                </li>
+
                 <li>
                   <i
                     class="fa-brands fa-youtube fa-xl"
@@ -546,19 +692,19 @@
                 </li>
                 <li>
                   <i
-                    class="fa-brands fa-instagram  fa-xl"
+                    class="fa-brands fa-instagram fa-xl"
                     style="color: whitesmoke"
                   ></i>
                 </li>
                 <li>
                   <i
-                    class="fa-brands fa-linkedin  fa-xl"
+                    class="fa-brands fa-linkedin fa-xl"
                     style="color: whitesmoke"
                   ></i>
                 </li>
                 <li>
                   <i
-                    class="fa-brands fa-github  fa-xl"
+                    class="fa-brands fa-github fa-xl"
                     style="color: whitesmoke"
                   ></i>
                 </li>
@@ -581,7 +727,7 @@
                 <a href="assets/example.html" class="footer_a">Examples</a>
               </li>
               <li class="footer_li">
-                <a href="#" class="footer_a">Components</a>
+                <a href="assets/component.html" class="footer_a">Components</a>
               </li>
               <li class="footer_li">
                 <a href="assets/blog.html" class="footer_a">Blog</a>

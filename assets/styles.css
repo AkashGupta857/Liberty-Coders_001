@@ -184,7 +184,7 @@ section.ab {
   align-items: center;
 }
 .contab > h6 {
-  color: rgb(182, 182, 182);
+  color: whitesmoke;
   font-size: 30px;
   font-weight: 700;
   font-family: "poppins", sans-serif;
@@ -244,7 +244,7 @@ section.ad > div.contad {
 .contad > h6 {
   margin-top: 40px;
   margin-bottom: 30px;
-  color: rgb(182, 182, 182);
+  color:whitesmoke;
   font-size: 25px;
   font-weight: 600;
   font-family: "poppins", sans-serif;
@@ -275,6 +275,114 @@ section.ad > div.contad {
   height: 400px;
   object-fit: contain;
 }
+/* animations */
+.cardcd{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+
+}
+@keyframes appear{
+  from{
+    opacity: 0;
+    transform: translateY(-100px);
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes adi {
+  from {
+    transform: translateZ(-50px);
+    opacity: 0;
+    scale: 0.5;
+}
+to{
+  transform: translateZ(0px);
+  opacity: 1;
+ scale: 1;
+}}
+.cardab{
+  animation: adi   linear;
+  animation-timeline: view();
+  animation-range: entry ;
+}
+
+
+/* animations */
+.code-container {
+  
+  position: relative;
+  border: 2px solid #8000ff;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 600px;
+ 
+}
+.CodeMirror {
+  height: auto;
+  background-color: #c4a0a0;
+  color: #f8f8f2;
+}
+.copy-button {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  background-color: #8000ff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.copy-button:hover {
+  background-color: #5700b3;
+}
+.codecont{
+  margin: auto;
+  max-width: 1320px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+
+  
+}
+.codecont img{
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
+}
+ .button-link{
+  position: absolute;
+font-family: "poppins",sans-serif;
+  top: 10px;
+  right: 30px;
+  background-color: #8000ff;
+  color: whitesmoke;
+  padding: 5px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 5px;
+ 
+  transition: background-color 0.3s;
+}
+.button-link:hover{
+  background-color: #5700b3;
+}
+h1#cc{
+  font-family: "poppins" ,sans-serif;
+  font-size: 30px;
+  color: whitesmoke;
+  text-align: center;
+  margin-top : 100px;
+
+}
 
 section.ad > div.contad > h1.ad {
   color: whitesmoke;
@@ -289,6 +397,7 @@ section.ee {
   font-family: "poppins", sans-serif;
   margin-top: 50px;
   margin-bottom: 200px;
+  text-align: center;
 }
 .contee {
   margin: auto;
