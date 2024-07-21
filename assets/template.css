@@ -25,6 +25,9 @@
     margin-bottom: 25px;
 
 }
+.links{
+    position: relative;
+}
 .contemp>p{
     font-size: 18px;
     font-weight: 400;
@@ -32,14 +35,24 @@
     width: 600px;
 
 }
+.header > img:nth-of-type(1){
+    height: 4rem;
+    display: none;
+}
+.links2{
+display: none;
+}
+  
 .contemp2{
     margin: auto;
     max-width: 1320px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
+}
+.links > a:hover{
+    text-decoration: underline;
+    color: white!important;
 }
 section.ba{
     background-color: #000;
@@ -63,4 +76,37 @@ section.ba{
   margin-top: 60px;
   margin-bottom: 60px;
   font-family: "poppins", sans-serif;
+}
+
+@media (max-width:900px){
+    .header > img:nth-of-type(1){
+      display: block;
+      cursor: pointer;
+    }
+    .links{
+      display: none;
+    }
+    .media{
+      display: none;
+    }
+    .links2{
+      width: 100%;
+      background-color: white;
+      color: black;
+      position: absolute;
+      display: none;
+      align-items: center;
+      flex-direction: column;
+      top: 100%;
+    }
+    .links2 > a{
+      display: block;
+      padding: 1rem 0px;
+    }
+    .contemp > h1{
+        max-width: 90%;
+    }
+    .contemp > p{
+        max-width: 90%;
+    }
 }

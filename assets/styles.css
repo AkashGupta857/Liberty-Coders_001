@@ -40,6 +40,9 @@ div.header {
   align-items: center;
   position: relative;
 }
+.imgimp{
+  display: none;
+}
 .search-bar {
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -519,6 +522,19 @@ a.footer_a{
 }
 
 @media (max-width:900px){
+  .imgimp{
+    display: block;
+  }
+  body{
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  div.header{
+    width: 100vw;
+  }
+  .contee{
+    width: 100vw;
+  }
   .header > img:nth-of-type(2){
     display: block;
     cursor: pointer;
@@ -542,5 +558,147 @@ a.footer_a{
   .links2 > a{
     display: block;
     padding: 1rem 0px;
+  }
+  .contab{
+    width: 100vw;
+  }
+  .codecont{
+    width: 100vw;
+  }
+  .section.ad > div.contad{
+    width: 100vw;
+  }
+  .text > h1{
+    font-size: 2rem;
+    max-width: 15rem;
+    margin: auto;
+  }
+  .content > p:nth-of-type(1){
+    font-size: 1rem;
+    max-width: 20rem;
+    margin: auto;
+  }
+  .search{
+    flex-direction: column;
+  }
+  h1#cc{
+    font-size: 1.5rem;
+  }
+  .codecont{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+  .codecont > div:nth-of-type(1){
+    width: 90%;
+    margin: auto;
+  }
+  .codecont > div:nth-of-type(1) > .code-container{
+    width: 90%;
+  }
+  .codecont > div:nth-of-type(2){
+    display: none;
+    width: 90%;
+    margin: auto;
+  }
+  .codecont > div:nth-of-type(2) > div{
+    width: 90%;
+  }
+  .codecont > div:nth-of-type(2) .img{
+    width: 90%;
+  }
+  .contab > h6{
+    font-size: 1.2rem;
+  }
+  .contab > .cardscontainer{
+    flex-direction: column;
+    width: 100%;
+  }
+  .contab > .cardscontainer > .cardab{
+    width: 80%;
+  }
+  section.ad > div.contad > h1.ad{
+    font-size: 1.3rem;
+  }
+  .contad > h6{
+    font-size: 1.1rem;
+    max-width: 80%;
+    text-align: center;
+  }
+  .contee > h1{
+    font-size: 1.3rem;
+  }
+  .contee > p{
+    font-size: 1.1rem;
+    max-width: 80%;
+  }
+  .eegrid{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  section#support > div > div > div:nth-of-type(1) > h1{
+    font-size: 1.3rem !important;
+  }
+  section#support > div > div > div:nth-of-type(1) > p{
+    font-size: 1.1rem !important;
+    max-width: 80%;
+    text-align: center;
+    /* margin: auto; */
+  }
+  .open{
+    width: 80vw;
+  }
+  .ui_support > h1{
+    font-size: 1.2rem !important;
+  }
+  .ui_support{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ui_support > div{
+    width: 80%;
+  }
+  .ui_support > div > .list{
+    flex-wrap: wrap !important;
+  }
+  section#fast > div > div:nth-of-type(1) > h1{
+    font-size: 1rem !important;
+    max-width: 80%;
+  }
+  section#fast > div > div:nth-of-type(1) > p {
+    max-width: 80%;
+  }
+  section#fast > div > div:nth-of-type(2) img{
+    display: none;
+  }
+  #foot{
+    padding: 0px;
+  }
+  footer > .container{
+    width: 90%;
+  }
+  .footer2{
+    /* flex-direction: column; */
+    padding: 10px 1rem;
+    /* width: 100vw; */
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .footer_pic{
+    display: none;
+  }
+  .footer_social > ul{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+  }
+  .footer_social > ul > li{
+    padding: 0px 10px;
+  }
+  .footer_social > ul > .text{
+    padding: 0px;
   }
 }

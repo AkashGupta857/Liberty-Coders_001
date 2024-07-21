@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Textarea Component</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css">
+  <style>
+    .code-container {
+      position: relative;
+      border: 2px solid #8000ff;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .CodeMirror {
+      height: auto;
+      background-color: #2d2d2d;
+      color: #f8f8f2;
+    }
+    .copy-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #8000ff;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .copy-button:hover {
+      background-color: #5700b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="code-container">
+      <textarea id="code-editor">
+      </textarea>
+      <button class="copy-button" onclick="copyCode()">Copy</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/sass/sass.min.js"></script>
+  <script>
+    const editor = CodeMirror.fromTextArea(document.getElementById('code-editor'), {
+      lineNumbers: true,
+      mode: 'sass',
+      theme: 'dracula'
+    });
+
+    function copyCode() {
+      const code = editor.getValue();
+      navigator.clipboard.writeText(code).then(() => {
+        alert('Code copied to clipboard!');
+      }).catch(err => {
+        console.error('Failed to copy code: ', err);
+      });
+    }
+  </script>
+</body>
+</html>
