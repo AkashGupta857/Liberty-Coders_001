@@ -22,8 +22,7 @@
 }
 body {
   color: #5D5F63;
-  background: white;
-  background-image: url("../img2.webp");
+  background: linear-gradient(black, black);
   font-family: 'Open Sans', sans-serif;
   padding: 0;
   color:white;
@@ -38,7 +37,7 @@ body {
   width: 240px;
   height: 100vh;
   top:0px;
-  background: #000;
+  background: linear-gradient(#800fff, black);
   position: absolute;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -112,7 +111,7 @@ body {
   width: 1200px;
   height: 100vh;
   margin-left: 19rem;
-  color: black;
+  /* color: black; */
   overflow:auto;
 }
 
@@ -156,10 +155,10 @@ padding: 2rem;
 
 .cont p{
   margin-bottom: 2rem;
-  color: #2a2b2c;
+  /* color: #2a2b2c; */
 }
 
 .cont li{
   margin-bottom: 1rem;
-  color: #4b5563;
+  /* color: #4b5563; */
 }

@@ -29,17 +29,18 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background:linear-gradient(90deg, #800fff, black);
+    background:linear-gradient(#800fff, black);
+    height: 100vh;
     padding: 2rem;
     color: white;
 }
 
 .maincontainer{
-    width: 1320px;
+    max-width: 1320px;
 }
 
-.maincontainer > button{
-    background-color: #2f085b;
+.maincontainer > a > button{
+    background-color: #410685;
     padding: 10px 2rem;
     color: white;
     font-size: 1rem;
@@ -48,12 +49,13 @@ body{
     display: block;
     transition: background-color 1s;
     font-family: "Edu AU VIC WA NT Hand";
+    border: 1px solid #2f0461;
 }
-.maincontainer > button > a{
+.maincontainer > a{
     color: white;
     text-decoration: none;
 }
-.maincontainer > button:hover{
+.maincontainer > a > button:hover{
     background-color: black;
     color:white;
     cursor: pointer;
@@ -67,6 +69,7 @@ body{
     margin-top: 1rem;
     padding: 10px 1rem;
     border-radius: 10px;
+    display: none;
 }
 
 .maincontainer > .components{
@@ -82,7 +85,7 @@ body{
     height: 30rem;
 }
 .components > .left > button{
-    background-color: black;
+    background-color: #800fff;
     padding: 10px 1rem;
     color: white;
     font-size: 1rem;
@@ -93,8 +96,8 @@ body{
 }
 .components > .left > button:hover{
     cursor: pointer;
-    color:black;
-    background-color: white;
+    color: white;
+    background-color: black;
 }
 .components > .left textarea{
     width: 100%;
@@ -115,7 +118,7 @@ body{
 }
 
 .components > .right button{
-    background-color: black;
+    background-color: #800fff;
     padding: 10px 1rem;
     color: white;
     font-size: 1rem;
@@ -125,7 +128,8 @@ body{
     margin-bottom: 10px;
 }
 .components > .right button:hover{
-    border: 1px solid white;
+    background-color: black;
+    border: 1px solid #800fff;
     cursor: pointer;
 }
 
@@ -135,9 +139,9 @@ body{
     border-radius: 10px;
 }
 
-.components:nth-of-type(2) > .right{
+/* .components:nth-of-type(2) > .right{
     order: -1;
-}
+} */
 
 .smallcomponent{
     display: flex;
@@ -177,4 +181,19 @@ body{
 .smallcomponent > .right > div > p:nth-of-type(2){
     color: gray;
     margin-top: 8px;
+}
+
+
+@media (max-width: 700px){
+    .components{
+        flex-direction: column;
+    }
+    .components > .left{
+        width: 100%;
+        margin-top: 6rem;
+    }
+    .components > .right{
+        width: 100%;
+        margin-top: 6rem;
+    }
 }
