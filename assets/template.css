@@ -83,12 +83,8 @@ section.ba{
       display: block;
       cursor: pointer;
     }
-    .links{
-      display: none;
-    }
-    .media{
-      display: none;
-    }
+ 
+   
     .links2{
       width: 100%;
       background-color: white;

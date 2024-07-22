@@ -29,7 +29,7 @@ section#support {
 
 
 section#support > div > div {
-  max-width: 600px;
+  /* max-width: 600px; */
   margin: auto;
 }
 
@@ -39,14 +39,15 @@ section#support > div > div > div:nth-of-type(1) > h1 {
 	font-size: 40px;
 	font-weight: 700;
 	font-family: "poppins",sans-serif;
+  margin: 5px;
 }
 
 section#support > div > div > div:nth-of-type(1) > p {
   color: whitesmoke;
   font-family: poppins, sans-serif;
   font-size: 20px;
-  width: 600px;
-
+  /* width: 600px; */
+  margin: 10px;
   text-align: center;
  
 }
@@ -193,7 +194,7 @@ section#fast > div > div:nth-of-type(1) > h1 {
   font-weight: 700;
   font-family: poppins, sans-serif;
   text-align: center;
-  width: 550px;
+  /* width: 550px; */
   margin: auto;
   padding-bottom: 25px;
 }
@@ -209,7 +210,7 @@ section#fast > div > div:nth-of-type(1) > p {
   color: whitesmoke;
   font-family: "poppins", sans-serif;
   font-size: 20px;
-  width: 600px;
+  /* width: 600px; */
   margin: auto;
   text-align: center;
   line-height: 1.6;
@@ -244,4 +245,23 @@ section#fast > div > div:nth-of-type(1) > div a:hover {
 
 section#fast > div > div:nth-of-type(2) img {
   width: 100%;
+}
+.sb:hover{
+  color: #000;
+}
+@media only screen and (max-width:768px) and (min-width:300px) {
+  #foot{
+    padding: 20px;
+  }
+  .footer_pic{
+    width: 72%;
+  }
+  .footer_social > ul> li{
+    padding:0px ;
+    width: 80%;
+  }
+  .footer_social>ul>.text{
+    padding: 0px;
+  }
+
 }
